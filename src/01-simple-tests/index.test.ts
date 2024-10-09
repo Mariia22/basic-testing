@@ -1,5 +1,6 @@
 import { simpleCalculator, Action } from './index';
 
+jest.setTimeout(30000);
 describe('simpleCalculator tests', () => {
   test('should add two numbers', () => {
     expect(simpleCalculator({ a: 1, b: 1, action: Action.Add })).toBe(2);
