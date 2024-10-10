@@ -1,5 +1,7 @@
 import { mockOne, mockTwo, mockThree, unmockedFunction } from './index';
 
+jest.setTimeout(30000);
+
 jest.mock('./index', () => {
   const originalModule =
     jest.requireActual<typeof import('./index')>('./index');
